@@ -135,6 +135,7 @@ html,body{
     align-items: center;
     border: 1px solid transparent;    
     white-space: normal;
+    text-decoration: none;
 }
 
 /**
