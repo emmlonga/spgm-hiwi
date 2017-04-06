@@ -1,0 +1,162 @@
+.page-content {
+    background: linear-gradient(to bottom, #f6f7fc 0%,#d5e1e8 70%);
+    transform-style: preserve-3d;
+    transform: perspective(800px);
+}
+
+html,body{
+   height:100%;
+    font-size:24px;
+}
+.carousel,.item,.active{
+   height:100%;
+ }
+.carousel-inner{
+    height:100%;
+}
+
+.carousel-indicators{
+    
+}
+
+
+#nav{
+    height: 60px;
+   position: absolute;
+    top:0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0,0,0,0.8);
+    color: white;
+}
+
+.selected{
+    font-size: 36px;
+}
+
+.screenTitle{
+    font-size: 30px;
+   position: absolute;
+    height: 84px;
+    top:60px;
+    left: 0;
+    right: 0;
+    line-height: 84px;
+    margin: auto;
+    text-align: center;
+    color: black; 
+}
+
+.cardGroup{
+   position: absolute;
+    top:168px;
+    bottom: 260px;
+    left: 0;
+    right: 0;
+    margin: auto 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.cardEle{
+    height: 100%;
+    width: 100%;
+    margin: auto 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: red;
+}
+
+.fa-undo{
+    position: absolute;
+    font-size: 80px;
+    bottom:57px;
+    left: 285px;
+}
+
+.fa-undo span{
+    font-size: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+#mainCircle{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    z-index: 1000;
+    position: absolute;
+    bottom: 27px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid transparent;    
+    white-space: normal;
+}
+
+/**
+$('#mainCircle').toggleClass('active');
+**/
+#mainCircle.active {
+
+        -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+    
+  -webkit-animation: neon1 2.2s ease-in-out infinite alternate;
+  -moz-animation: neon1 2.2s ease-in-out infinite alternate;
+  animation: neon1 2.2s ease-in-out infinite alternate;
+}
+
+
+@-webkit-keyframes neon1 {
+  from {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+  to {
+    box-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 8px #FF1177, 0 0 12px #FF1177, 0 0 16px #FF1177, 0 0 24px #FF1177, 0 0 32px #FF1177;
+  }
+}
+
+
+@-moz-keyframes neon1 {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}
+
+@keyframes neon1 {
+  from {
+    box-shadow: 0 0 6px  #ff9800, 0 0 12px #fff, 0 0 18px #fff, 0 0 24px #FF1177, 0 0 36px #FF1177, 0 0 48px #FF1177, 0 0 72px #FF1177, 0 0 96px #FF1177;
+  }
+  to {
+    box-shadow: 0 0 2px  #ff9800, 0 0 4px #fff, 0 0 6px #fff, 0 0 8px #FF1177, 0 0 12px #FF1177, 0 0 16px #FF1177, 0 0 24px #FF1177, 0 0 32px #FF1177;
+  }
+}
+
+/*REEEEEEEEEEESPONSIVE*/
+
+@media (max-width: 650px) {
+  #container {
+    width: 100%;
+  }
+  p {
+    font-size: 3.5em;
+  }
+}
