@@ -11,3 +11,15 @@ var $$ = Dom7;
 var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true
 });
+
+ /** App initialization**/
+
+$(document).ready(function () {
+    console.log("App is initialized");
+});
+
+myApp.onPageInit('courses', function (page) {
+        // Do something here for "index" page
+        console.log(page.name + ' initialized');
+        myApp.openPanel('right');
+    });

@@ -1572,8 +1572,6 @@ kbd {
 .button {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 0 1rem 0;
-  padding: 0.85em 1em;
   -webkit-appearance: none;
   border: 1px solid transparent;
   border-radius: 0;
