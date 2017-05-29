@@ -42,6 +42,12 @@
     <!--TUM-->
     <link rel="stylesheet" href="css/TUMstyle.css">
     
+    <!--SLICK-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+
+    
     <!--Path to own CSS SHEET-->
     <link rel="stylesheet" href="css/mystyle.css">
 
@@ -60,7 +66,7 @@
       <div class="view view-main">
         <div class="pages">
           <!-- Page, "data-page" contains page name -->
-          <div data-page="team" class="page">
+          <div data-page="students" class="page">
           
             <div class="page-content">
                 
@@ -119,6 +125,7 @@
                     <ul>
                         <li>Homepage</li>
                         <li>> Team</li>
+                        <li>> Student Assistants</li>
                     </ul>
                 </div>
                     
@@ -126,12 +133,12 @@
                 
                 <div class="leftNav">
                     <ul class="leftNav_list">
-                        <li class="leftNav_item"><a class="leftNav_link leftNav_selected sub sub_active">Team</a></li>
+                        <li class="leftNav_item"><a class="leftNav_link sub sub_active">Team</a></li>
                             <ul class="leftNav_submenu">
                                 <li class="leftNav_item"><a class="leftNav_link">Leader</a></li>
                                 <li class="leftNav_item"><a class="leftNav_link">Secretary</a></li>
                                 <li class="leftNav_item"><a class="leftNav_link">Researchers</a></li>
-                                <li class="leftNav_item"><a class="leftNav_link">Student Assistants</a></li>
+                                <li class="leftNav_item"><a class="leftNav_link leftNav_selected">Student Assistants</a></li>
                             </ul>
                     </ul>
                 </div>
@@ -139,35 +146,65 @@
                 <div class="innerContent">
                 
                 <div class="screenTitle">
-                    <div id="mainTitle">Team</div>
-                    <div id="subTitle">Staff and contact information.</div></div>
+                    <div id="mainTitle">Student Assistants</div>
+                    <div id="subTitle"></div></div>
                 
-               <div class="teamFeed">
-                   <div id="teamDiv">
-                       <div class="lTitle">Gallery</div>
-                       <img  style="width:840px" src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_IMG_9344_df490a31fd.jpg">
-                   </div>
-                   <div id="leaderDiv" onclick="javascript:mainView.router.loadPage('teamMember.html');">
-                       <div class="lTitle">Leader</div>
-                        <img src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_Mitarbeiter_400x500_Senner_a66e786f88.jpg">
+               <div class="sFeed">
+                   <div class="your-class">
+                       <div class="rCard shadow--4dp">
+                        <img src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_Mitarbeiter_Backes_e51f923374.png">
                        <ul>
-                           <li id="lName"><span>Prof. Dr.-Ing. Veit Senner</span></li>
-                           <li class="lCat2"><span>Research field:</span><br><span>Biomechanics, Materials Science, Physiology, Psychology</span></li>
-                           <li><span class="lCat">Room</span><span>MW 3336</span></li>
-                           <li><span class="lCat">Email</span><span>senner@lfe.mw.tum.de</span></li>
-                           <li><span class="lCat">Tel</span><span>+49 89 289 15364</span></li>
+                           <li class="sName">B.Sc. Anne Backes</li>
+                           <li><span class="lCat">Email</span><span>anne.backes@tum.de</span></li>
                        </ul>
-                   </div>
-                   <div id="staffDiv">
-                       <div class="lTitle">Staff</div>
-                       <div id="lStaff">
-                        <div class="lCard button button-raised">Secretary</div>
-                       <div class="lCard button button-raised" onclick="javascript:mainView.router.loadPage('researchers.html');">Researchers</div>
-                       <div class="lCard button button-raised" onclick="javascript:mainView.router.loadPage('students.html');">Student Assistants</div>
                        </div>
-                   </div>
+                       
+                       <div class="rCard shadow--4dp">
+                        <img src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_Mitarbeiter_Knode_f8d4551de2.jpg">
+                       <ul>
+                           <li class="sName">B.Sc. Jana Knode</li>
+                           <li><span class="lCat">Email</span><span>knode@lfe.mw.tum.de</span></li>
+                       </ul>
+                       </div>
+                       
+                       <div class="rCard shadow--4dp">
+                        <img src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_profile_small_2e587d40a6.jpg">
+                       <ul>
+                           <li class="sName">B.Sc. Kaiyu Huang</li>
+                           <li><span class="lCat">Email</span><span>kaiyu.huang@tum.de</span></li>
+                       </ul>
+                       </div>
+                       
+                       <div class="rCard shadow--4dp">
+                        <img src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_Mitarbeiter_400x500_Muster_0d35d2fe5f.png">
+                       <ul>
+                           <li class="sName">B.Sc. Christoph Kugler</li>
+                           <li><span class="lCat">Email</span><span>kuglerchristoph@gmx.de</span></li>
+                       </ul>
+                       </div>
+                       
+                       <div class="rCard shadow--4dp">
+                        <img src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_Mitarbeiter_400x500_Muster_0d35d2fe5f.png">
+                       <ul>
+                           <li class="sName">B.Sc. Maximilian Steigenberger</li>
+                           <li><span class="lCat">Email</span><span>maximilian.steigenberger@tum.de</span></li>
+                       </ul>
+                       </div>
+                       
+                       <div class="rCard shadow--4dp">
+                        <img src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_Mitarbeiter_400x500_Muster_0d35d2fe5f.png">
+                       <ul>
+                           <li class="sName">B.Sc. Michael Knye</li>
+                           <li><span class="lCat">Email</span><span>m.knye@tum.de</span></li>
+                       </ul>
+                       </div>
+                       
+                       
+                       
+                    </div>
+                   
+                   
                 </div>
-                
             </div>  
           </div>
         </div>
@@ -180,11 +217,22 @@
     <script src="js/myscript.js"></script>
      
     <script src="js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://www.tum.de/typo3conf/ext/in2template/Resources/Public/JavaScripts/basic.js"></script>
+    
+      <script type="text/javascript">
+        $(document).ready(function(){
+        $('.your-class').slick({
+            infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 3      });
+    });
+  </script>
+    
 </body>
 
 </html>

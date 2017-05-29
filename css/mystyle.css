@@ -131,6 +131,7 @@ a {
 
 .breadCrumb ul li {
     float: left;
+    margin-right: 5.5px;
 }
 
 /**LEFT NAV**/
@@ -334,16 +335,11 @@ a {
 
 .menuEle{
     margin: 48px 0px;
-    font-size: 36px;
+    font-size: 24px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
 }
 
-.menuEle2 {
-    margin: 48px 0 48px -16px;
-    font-size: 38px;
-    padding: 10px 16px;
-    
-    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
-}
 
 /*Project*/
 #pDiv{
@@ -358,7 +354,7 @@ a {
 }
 
 #pName{
-    font-size: 56px;
+    font-size: 36px;
     line-height: 1;
 }
 
@@ -386,7 +382,8 @@ a {
 
 .pSub {
     display: inline-block;
-    width: 100px;
+    width: 120px;
+    font-weight: bold;
 
 }
 
@@ -397,6 +394,9 @@ a {
     flex-direction: row;
 }
 
+#pClass span {
+    font-weight: bold;
+}
 /*
 #pClass{
     position: absolute;
@@ -417,7 +417,7 @@ a {
 
 
 /**NEWS**/
-.newsFeed{
+.newsFeed, .teamFeed, .rFeed, .sFeed, .mFeed, .pFeed{
    position: absolute;
     top:108px;
     bottom: 55px;
@@ -444,6 +444,22 @@ a {
     width: 674px;
     height: inherit;
     padding: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+
+    
+    transform: translate3d(100%,0,0);
+    -webkit-transform: translate3d(109%,0,0);
+}
+
+.coursePanel.on{
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 .item-content{
@@ -468,6 +484,370 @@ a {
     margin-bottom: 35px;
     line-height: 1.4;
 }
+
+/**TEAM**/
+
+#teamDiv{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 840px;
+}
+
+#leaderDiv{
+    position: absolute;
+    top: 0px;
+    width: 669.3px;
+    right: 0px;
+    padding: 0px 0px 0px 42.5px;
+}
+
+.lTitle{
+    font-size: 27px;
+    color: #4c4c4c;
+    text-transform:inherit;
+    line-height: 1.5;
+    border-bottom: 1px solid #b3b3b3;
+    margin-bottom: 20px;
+}
+
+#leaderDiv img{
+    height: 300px;
+    width: auto;
+}
+
+#leaderDiv ul{
+    position: absolute;
+    top: 60px;
+    left: 302.5px;
+    right: 0px;
+    bottom: 360px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+.lCat{
+    display: inline-block;
+    min-width: 110px;
+}
+
+.lCat2{
+    margin-bottom: 25px;
+}
+
+#staffDiv{
+    position: absolute;
+    bottom: 34.4px;
+    width: 669.3px;
+    right: 0px;
+    padding: 0px 0px 0px 42.5px;
+}
+
+#lName, .rName, .sName, .mName{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+#lName span, .rName span {
+    border-bottom: 1px solid #777;
+    padding-bottom: 1px;
+}
+
+#lStaff{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lCard{
+    height: 65px;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: capitalize;
+    background: #e6e6e6;
+    color: black;
+}
+
+/**RESEARCHERS**/
+.rFeed {
+    top: 85px;
+    bottom: 17.5px;
+    left: 25px;
+    right: 40px;    
+}
+
+.your-class,.slick-list,.slick-track{
+    height: 100%;
+}
+
+.slick-list{
+    margin-left: 15px;
+}
+
+.slick-slide{
+    margin: 0px 17.5px;
+}
+
+.slick-arrow::before{
+    color: black;
+    font-size: 40px;
+}
+.rCard{
+    position: relative;
+    width: 450px;
+    height: 99%;
+    color: black;
+}
+
+.rCard img{
+    height: 300px;
+    margin: 42.5px 105px;
+    width: auto;
+}
+
+.rCard ul{
+    position: absolute;
+    top: 380px;
+    bottom: 360px;
+    left: 40px;
+    right: 40px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+.rName, .sName{
+    text-align: center;
+}
+
+/**STUDENTS**/
+.sFeed {
+    top: 105px;
+    bottom: 77.5px;
+    left: 25px;
+    right: 40px;    
+}
+
+.sName {
+    margin-bottom: 40px;
+}
+
+/**TEAM MEMBER**/
+.mName {
+    margin-bottom: 42.5px;
+}
+.mFeed {
+    display: flex;
+    top: 85px;
+    left: 0;
+    right: auto;
+}
+
+
+.mImg {
+    display: block;
+    height: 420px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 42.5px;
+}
+
+#mInfo {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    bottom: 360px;
+    line-height: 1.5;
+    margin: 0px;
+    margin-left: 21.25px;
+    min-width: 375px;
+}
+
+#mLeft{
+    padding-right: 63.75px;
+    border-right: 1px solid #b3b3b3;
+}
+
+#mRight{
+    padding-left: 63.75px;
+    overflow: auto;    
+}
+
+.mItem{
+    margin-bottom: 40px;
+}
+
+.mItem ul{
+    list-style-position: outside;
+}
+
+.mItem ul li {
+    padding-left: 215px;
+    text-indent: -215px;
+    line-height: 1.75;
+}
+
+.tResume ul li{
+    margin-bottom: 12.5px;
+    line-height: 1.5;
+}
+
+.mItem div {
+    margin-bottom: 2.5px;
+}
+
+.mHidden{
+    display: none;
+}
+
+.mCat{
+    display: inline-block;
+    width: 215px;
+    text-indent: 0px;
+}
+
+.inList{
+}
+
+
+/** RESEARCH PROJECTS**/
+/*Filter*/
+.pFeed {
+    display: flex;
+    left: 0;
+    bottom: 17.5px;
+    right: auto;
+}
+
+.pLeft {
+    width: 400px;
+    min-width: 400px;
+    padding: 30px 42.5px;
+    background-color: #e37222;
+    color: white;
+    margin-right: 42.5px;
+    
+    transition: 
+        transform 300ms ease-in-out,
+        position 150ms,
+        z-index 299ms 300ms;
+    z-index: -1;
+    
+    visibility: hidden;
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(-111%,0,0);
+    position: absolute;
+}
+
+.pLeft.on{
+    z-index: 1;
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    position: relative;
+}
+
+.pLeft .button {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+    text-transform: none;
+}
+
+#closeFilter {
+    position: absolute;
+    top: 0px;
+    right:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+
+.filterTitle{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.filterCat {
+    margin-bottom: 25px;
+}
+
+.filterCat span {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/*List*/
+.pCenter {
+    min-width: 400px;
+    width: 400px;
+}
+
+.pCenter .fa {
+    background-color: #e37222;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    padding: 0px;
+    border: none;
+}
+
+#filterDiv{
+    background-color: #e37222;
+    color: white;
+    height: 70px;
+    width: 100%;
+    margin-bottom: 42.5px;
+}
+
+.menuEle2 {
+    margin: 24px 0 24px -16px;
+    font-size: 24px;
+    font-weight: normal;
+    padding: 10px 16px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+/*Project Summary*/
+.pRight {
+    max-width: 1109.3px;
+    padding-left: 42.5px;
+    overflow: auto;
+}
+
+#readMore {
+    float: right;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pRight .button {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
 
 /**MAIN CIRCLE**/
 #mainCircle{

@@ -55,12 +55,13 @@
 
 <body>
 
+
     <!-- Views -->
     <div class="views">
       <div class="view view-main">
         <div class="pages">
           <!-- Page, "data-page" contains page name -->
-          <div data-page="team" class="page">
+          <div data-page="news" class="page">
           
             <div class="page-content">
                 
@@ -110,15 +111,17 @@
                 <div class="oNav"><div class="nav">
                     <a href="offers.html">Offers</a>
                     <a href="news.html">News</a>
-                    <a href="researchNew.html">Research</a>
+                    <a href="researchNew.html" class="selected">Research</a>
                     <a href="courses.html">Courses</a>
-                    <a href="team.html" class="selected">Team</a>
+                    <a href="team.html">Team</a>
                 </div></div>
                     
                 <div class="breadCrumb">
                     <ul>
                         <li>Homepage</li>
-                        <li>> Team</li>
+                        <li>> Research</li>
+                        <li>> Projects by Superior Research Goals</li>
+                        <li>> Performance</li>
                     </ul>
                 </div>
                     
@@ -126,46 +129,55 @@
                 
                 <div class="leftNav">
                     <ul class="leftNav_list">
-                        <li class="leftNav_item"><a class="leftNav_link leftNav_selected sub sub_active">Team</a></li>
+                        <li class="leftNav_item"><a class="leftNav_link sub sub_active">Research</a>
                             <ul class="leftNav_submenu">
-                                <li class="leftNav_item"><a class="leftNav_link">Leader</a></li>
-                                <li class="leftNav_item"><a class="leftNav_link">Secretary</a></li>
-                                <li class="leftNav_item"><a class="leftNav_link">Researchers</a></li>
-                                <li class="leftNav_item"><a class="leftNav_link">Student Assistants</a></li>
+                                <li class="leftNav_item"><a class="leftNav_link sub">Projects by Research Fields</a></li>
+                                <li class="leftNav_item"><a class="leftNav_link sub sub_active">Projects by Superior Research Goals</a>
+                                    <ul class="leftNav_submenu_2">
+                                         <li class="leftNav_item"><a class="leftNav_link leftNav_selected">Perfomance</a></li>
+                                         <li class="leftNav_item"><a class="leftNav_link">Pleasure</a></li>
+                                         <li class="leftNav_item"><a class="leftNav_link">Safety</a></li>
+                                    </ul>
+                                </li>
+                                <li class="leftNav_item"><a class="leftNav_link">Projects by Sports Disciplines</a></li>
                             </ul>
+                        </li>
+                        <li class="leftNav_item"><a class="leftNav_link">View all Projects</a></li>
                     </ul>
                 </div>
                 
                 <div class="innerContent">
                 
                 <div class="screenTitle">
-                    <div id="mainTitle">Team</div>
-                    <div id="subTitle">Staff and contact information.</div></div>
-                
-               <div class="teamFeed">
-                   <div id="teamDiv">
-                       <div class="lTitle">Gallery</div>
-                       <img  style="width:840px" src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_IMG_9344_df490a31fd.jpg">
-                   </div>
-                   <div id="leaderDiv" onclick="javascript:mainView.router.loadPage('teamMember.html');">
-                       <div class="lTitle">Leader</div>
-                        <img src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_Mitarbeiter_400x500_Senner_a66e786f88.jpg">
-                       <ul>
-                           <li id="lName"><span>Prof. Dr.-Ing. Veit Senner</span></li>
-                           <li class="lCat2"><span>Research field:</span><br><span>Biomechanics, Materials Science, Physiology, Psychology</span></li>
-                           <li><span class="lCat">Room</span><span>MW 3336</span></li>
-                           <li><span class="lCat">Email</span><span>senner@lfe.mw.tum.de</span></li>
-                           <li><span class="lCat">Tel</span><span>+49 89 289 15364</span></li>
-                       </ul>
-                   </div>
-                   <div id="staffDiv">
-                       <div class="lTitle">Staff</div>
-                       <div id="lStaff">
-                        <div class="lCard button button-raised">Secretary</div>
-                       <div class="lCard button button-raised" onclick="javascript:mainView.router.loadPage('researchers.html');">Researchers</div>
-                       <div class="lCard button button-raised" onclick="javascript:mainView.router.loadPage('students.html');">Student Assistants</div>
-                       </div>
-                   </div>
+                    <div id="mainTitle">News</div>
+                    <div id="subTitle">Stay up-to-date on what is happening at the professorship.</div></div>
+                    
+                <div class="newsFeed">
+                    <ul class="news-list">
+                      <li class="news-list__item">
+           s             <article class="news-list__content">
+                          <header class="news-list__header">
+                            <span><time class="news-list__date">13.03.2017</time></span>
+                            <a href="#" title="Research trip to Zugspitze">
+                              <h3>Research trip to Zugspitze &nbsp</h3>
+                            </a>
+                          </header>
+                          <figure class="news-list__image img-caption-float">
+                            <a href="#" title="Forschen unter barocken Fresken">
+                              <img src="http://www.spgm.mw.tum.de/typo3temp/_processed_/csm_WP_20170311_09_45_25_Pro_828b72142f.jpg" alt="Research trip to Zugspitze" title="Research trip to Zugspitze" style="width:336px;height:189px" >
+                            </a>
+                          </figure>
+                          <p class="bodytext">
+                              Students and researchers of the TUM and the University of Reutlingen spent three days on the Zugspitze. Together they performed studies in the fields of biomechanics and physiology of alpine skiers, as well as GPS tracking of a skiing person. As base station and accommodation served the Environmental Research Station “Schneefernerhaus”, which is situated close to the top of Germany’s highest mountain.
+                          </p>
+                          <footer>
+                            <div class="news-list__morelink">
+                              <a class="" href="#" title="Forschen unter barocken Fresken" style="border-bottom: 1px solid #777">read more</a>
+                            </div>
+                          </footer>
+                        </article>
+                      </li>
+                    </ul>             
                 </div>
                 
             </div>  
@@ -174,7 +186,6 @@
           
       </div>
     </div></div>    
-  
     <!--Our javascript script-->
     <script type="text/javascript" src="dist/js/framework7.js"></script>
     <script src="js/myscript.js"></script>

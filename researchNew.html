@@ -60,7 +60,7 @@
       <div class="view view-main">
         <div class="pages">
           <!-- Page, "data-page" contains page name -->
-          <div data-page="team" class="page">
+          <div data-page="researchNew" class="page">
           
             <div class="page-content">
                 
@@ -110,62 +110,95 @@
                 <div class="oNav"><div class="nav">
                     <a href="offers.html">Offers</a>
                     <a href="news.html">News</a>
-                    <a href="researchNew.html">Research</a>
+                    <a href="researchNew.html" class="selected">Research</a>
                     <a href="courses.html">Courses</a>
-                    <a href="team.html" class="selected">Team</a>
+                    <a href="team.html">Team</a>
                 </div></div>
                     
                 <div class="breadCrumb">
                     <ul>
                         <li>Homepage</li>
-                        <li>> Team</li>
+                        <li>> Research</li>
                     </ul>
                 </div>
                     
                         </header>
                 
-                <div class="leftNav">
+                <div class="leftNav" style="padding:0 42.5px;bottom:0px;margin-left:0px;background-color:white">
                     <ul class="leftNav_list">
-                        <li class="leftNav_item"><a class="leftNav_link leftNav_selected sub sub_active">Team</a></li>
+                        <li class="leftNav_item"><a class="leftNav_link leftNav_selected sub sub_active">Research</a>
                             <ul class="leftNav_submenu">
-                                <li class="leftNav_item"><a class="leftNav_link">Leader</a></li>
-                                <li class="leftNav_item"><a class="leftNav_link">Secretary</a></li>
-                                <li class="leftNav_item"><a class="leftNav_link">Researchers</a></li>
-                                <li class="leftNav_item"><a class="leftNav_link">Student Assistants</a></li>
+                                <li class="leftNav_item"><a class="leftNav_link sub">Projects by Research Fields</a></li>
+                                <li class="leftNav_item"><a class="leftNav_link sub">Projects by Superior Research Goals</a>
+                                    <ul class="leftNav_submenu_2" style="display:none">
+                                         <li class="leftNav_item"><a class="leftNav_link">Perfomance</a></li>
+                                         <li class="leftNav_item"><a class="leftNav_link">Pleasure</a></li>
+                                         <li class="leftNav_item"><a class="leftNav_link">Safety</a></li>
+                                    </ul>
+                                </li>
+                                <li class="leftNav_item"><a class="leftNav_link">Projects by Sports Disciplines</a></li>
                             </ul>
+                        </li>
+                        <li class="leftNav_item"><a class="leftNav_link">View all Projects</a></li>
                     </ul>
                 </div>
                 
                 <div class="innerContent">
-                
+                    
                 <div class="screenTitle">
-                    <div id="mainTitle">Team</div>
-                    <div id="subTitle">Staff and contact information.</div></div>
-                
-               <div class="teamFeed">
-                   <div id="teamDiv">
-                       <div class="lTitle">Gallery</div>
-                       <img  style="width:840px" src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_IMG_9344_df490a31fd.jpg">
-                   </div>
-                   <div id="leaderDiv" onclick="javascript:mainView.router.loadPage('teamMember.html');">
-                       <div class="lTitle">Leader</div>
-                        <img src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_Mitarbeiter_400x500_Senner_a66e786f88.jpg">
-                       <ul>
-                           <li id="lName"><span>Prof. Dr.-Ing. Veit Senner</span></li>
-                           <li class="lCat2"><span>Research field:</span><br><span>Biomechanics, Materials Science, Physiology, Psychology</span></li>
-                           <li><span class="lCat">Room</span><span>MW 3336</span></li>
-                           <li><span class="lCat">Email</span><span>senner@lfe.mw.tum.de</span></li>
-                           <li><span class="lCat">Tel</span><span>+49 89 289 15364</span></li>
+                    <div id="mainTitle">Research</div>
+                    <div id="subTitle">Search through the professorship's research projects.</div></div>
+                    
+                <div class="pFeed">
+                    <div class="pLeft">
+                        <div id="closeFilter" onclick="toggleFilter()"><i class="fa fa-times" aria-hidden="true"></i></div>
+                        <div class="filterCat"><span>Sports Disciplines</span>
+                            <div class="button">List of Sports</div>
+                        </div>
+                        <div class="filterCat"><span>Research Fields</span>
+                            <div class="button">Biomechanics</div>
+                            <div class="button">Material Science</div>
+                            <div class="button">Physiology</div>
+                            <div class="button">Psychology</div>
+                        </div>
+                        <div class="filterCat"><span>Research Goals</span>
+                            <div class="button">Performance</div>
+                            <div class="button">Pleasure</div>
+                            <div class="button">Safety</div>
+                        </div>                       
+                    </div>
+                    
+                    <div class="pCenter">
+                        <div id="filterDiv" class="shadow--2dp" onclick="toggleFilter()">
+                        <i style="display:inline-flex" class="button fa fa-filter" aria-hidden="true"></i>
+                        <span>Filter projects by categories</span>
+                        </div>
+                        
+                        <div class="lTitle">Project List</div>                        
+                        <ul>
+                           <li class="menuEle2 leftNav_selected shadow--4dp">Bioss</li>
+                            <li class="menuEle2">Functional Textils</li>
+                            <li class="menuEle2">Sky Running</li>
+                            <li class="menuEle2">Sustainable Fitness Service</li>
+                            <li class="menuEle2">Kneemax</li>
                        </ul>
                    </div>
-                   <div id="staffDiv">
-                       <div class="lTitle">Staff</div>
-                       <div id="lStaff">
-                        <div class="lCard button button-raised">Secretary</div>
-                       <div class="lCard button button-raised" onclick="javascript:mainView.router.loadPage('researchers.html');">Researchers</div>
-                       <div class="lCard button button-raised" onclick="javascript:mainView.router.loadPage('students.html');">Student Assistants</div>
-                       </div>
-                   </div>
+                    
+                    <div class="pRight">
+                        <div id="pName">BIOSS</div>
+                    <div id="pTitle">Biofeedback System for Thermal Strain</div>
+                    <div id="pDescription">Description
+                        <p>In sports, medicine and work thermal stress and hydration can be a performance inhibiting factor. Several studies prove a double edges problem due to transient conditions or under- or over-hydration that can cause health risks or even death. Due to the Zentrale Innovationsprogram Mittelstand (ZIM) of the Federal Ministry of Economic Affairs and Energy (BMWi), the Professorship of Sports Equipment and Materials of the Technische Universität München was granted a two year project. In cooperation with ciclosport® a new biofeedback system to monitor thermal stress in medicine, sports and work shall be developed. The goal is the development and combination of non invasive measuring methods to determine heat stress relevant parameters, such as body temperatures, heart frequency and sweat rate and/or their modelling. The integration of multiple factors shall lead to more reliable predictions of thermal strain and feedback on reasonable counteractions.</p>  
+                    </div>
+                        
+                        <div id="pLeader"><span>Leaders: Marius Janta; Stefanie Passler</span></div>
+                    
+                    <footer>
+                            <div class="news-list__morelink">
+                              <a class="" href="projectNew.html" style="border-bottom: 1px solid #777">read more</a>
+                            </div>
+                          </footer>
+                                        
                 </div>
                 
             </div>  
@@ -174,7 +207,6 @@
           
       </div>
     </div></div>    
-  
     <!--Our javascript script-->
     <script type="text/javascript" src="dist/js/framework7.js"></script>
     <script src="js/myscript.js"></script>

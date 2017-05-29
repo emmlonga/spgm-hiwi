@@ -62,7 +62,7 @@
           <!-- Page, "data-page" contains page name -->
           <div data-page="courses" class="page">
           
-            <div class="page-content">
+            <div class="page-content"  style="overflow-x:hidden">
                 
                 <header class="container">
                     <div class="js-service-bar service-bar">
@@ -110,14 +110,14 @@
                 <div class="oNav"><div class="nav">
                     <a href="offers.html">Offers</a>
                     <a href="news.html">News</a>
-                    <a href="researchT2.html">Research</a>
+                    <a href="researchNew.html">Research</a>
                     <a href="courses.html" class="selected">Courses</a>
                     <a href="team.html">Team</a>
                 </div></div>
                     
                 <div class="breadCrumb">
                     <ul>
-                        <li>Homepage &nbsp</li>
+                        <li>Homepage</li>
                         <li>> Courses</li>
                     </ul>
                 </div>
@@ -137,7 +137,7 @@
                 
                 <div class="innerContent">
                     
-                <div class="panel panel-right panel-cover coursePanel">
+                <div class="coursePanel">
                     <div class="content-block" style="margin:auto;padding:0">
                       <p class="cName">Biomechanics</p>
                         <ul class="cInfo" style="margin:auto">
@@ -173,7 +173,7 @@
                                 <ul>
                                     <li class="item-content">
                                       <div class="item-inner">
-                                        <div class="item-title leftNav_selected">Biomechanics</div>
+                                        <div class="item-title" id="first" onclick="openClose()">Biomechanics</div>
                                       </div>
                                     </li>
                                     <li class="item-content">
@@ -251,7 +251,7 @@
       </div>
     </div></div>    
     <!--Our javascript script-->
-    <script type="text/javascript" src="dist/js/framework7.min.js"></script>
+    <script type="text/javascript" src="dist/js/framework7.js"></script>
     <script src="js/myscript.js"></script>
      
     <script src="js/vendor/jquery.js"></script>

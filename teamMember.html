@@ -55,12 +55,13 @@
 
 <body>
 
+
     <!-- Views -->
     <div class="views">
       <div class="view view-main">
         <div class="pages">
           <!-- Page, "data-page" contains page name -->
-          <div data-page="team" class="page">
+          <div data-page="teamMember" class="page">
           
             <div class="page-content">
                 
@@ -115,10 +116,11 @@
                     <a href="team.html" class="selected">Team</a>
                 </div></div>
                     
-                <div class="breadCrumb">
+                  <div class="breadCrumb">
                     <ul>
                         <li>Homepage</li>
                         <li>> Team</li>
+                        <li>> Leader</li>
                     </ul>
                 </div>
                     
@@ -126,9 +128,9 @@
                 
                 <div class="leftNav">
                     <ul class="leftNav_list">
-                        <li class="leftNav_item"><a class="leftNav_link leftNav_selected sub sub_active">Team</a></li>
+                        <li class="leftNav_item"><a class="leftNav_link sub sub_active">Team</a></li>
                             <ul class="leftNav_submenu">
-                                <li class="leftNav_item"><a class="leftNav_link">Leader</a></li>
+                                <li class="leftNav_item"><a class="leftNav_link leftNav_selected">Leader</a></li>
                                 <li class="leftNav_item"><a class="leftNav_link">Secretary</a></li>
                                 <li class="leftNav_item"><a class="leftNav_link">Researchers</a></li>
                                 <li class="leftNav_item"><a class="leftNav_link">Student Assistants</a></li>
@@ -137,35 +139,73 @@
                 </div>
                 
                 <div class="innerContent">
-                
-                <div class="screenTitle">
-                    <div id="mainTitle">Team</div>
-                    <div id="subTitle">Staff and contact information.</div></div>
-                
-               <div class="teamFeed">
-                   <div id="teamDiv">
-                       <div class="lTitle">Gallery</div>
-                       <img  style="width:840px" src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_IMG_9344_df490a31fd.jpg">
-                   </div>
-                   <div id="leaderDiv" onclick="javascript:mainView.router.loadPage('teamMember.html');">
-                       <div class="lTitle">Leader</div>
-                        <img src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_Mitarbeiter_400x500_Senner_a66e786f88.jpg">
-                       <ul>
-                           <li id="lName"><span>Prof. Dr.-Ing. Veit Senner</span></li>
-                           <li class="lCat2"><span>Research field:</span><br><span>Biomechanics, Materials Science, Physiology, Psychology</span></li>
+
+                <div class="mName" style="font-size:30px;">Prof. Dr.-Ing. Veit Senner</div>
+
+                <div class="mFeed">
+                    <div id="mLeft">
+                        <img class="mImg" src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_Mitarbeiter_400x500_Senner_a66e786f88.jpg">
+                       <ul id="mInfo">
                            <li><span class="lCat">Room</span><span>MW 3336</span></li>
-                           <li><span class="lCat">Email</span><span>senner@lfe.mw.tum.de</span></li>
+                           <li><span class="lCat">Email</span><span>kilian.rauner@mytum.de</span></li>
                            <li><span class="lCat">Tel</span><span>+49 89 289 15364</span></li>
+                           <br>
+                           <li><span class="lCat" style="margin-left:none;">Consultation Hours</span><br><span>Tuesday, 14:00 till 18:00</span></li>
                        </ul>
                    </div>
-                   <div id="staffDiv">
-                       <div class="lTitle">Staff</div>
-                       <div id="lStaff">
-                        <div class="lCard button button-raised">Secretary</div>
-                       <div class="lCard button button-raised" onclick="javascript:mainView.router.loadPage('researchers.html');">Researchers</div>
-                       <div class="lCard button button-raised" onclick="javascript:mainView.router.loadPage('students.html');">Student Assistants</div>
-                       </div>
+                    
+                    <div id="mRight">
+                        <ul>
+                            <li class="mItem">
+                                <span class="lCat" style="margin-right:72.925px; font-weight:bold">Research field:</span><span>Biomechanics, Materials Science, Physiology, Psychology</span>
+                            </li>
+                            
+                            <li class="mItem tResume">
+                                <div class="lCat" style="font-weight:bold">Tabular resume:</div>
+                                <ul>
+                                    <li><span class="mCat">10/2005 - 10/2009</span><span>Associate Dean, TUM Faculty of Sport Science</span></li>
+                                    <li><span class="mCat">08/2002</span><span class="inList">Appointment Professorship at Technische Universität München, Speciality Devision Sport Equipment and Materials</span></li>
+                                    <li><span class="mCat">10/2001</span><span>Granting of Doctorate in Mechanical Engineering, TUM</span></li>
+                                    <li><span class="mCat">1995</span><span>Academic Degree in Sports Science: „Diplom Sportlehrer (Univ.)“ Technische Universität München
+</span></li>
+                                    <li><span class="mCat">1989</span><span>Academic Degree in Mechanical Engineering „Diplom Ingenieur (Univ.)“, TUM. Study branch: Design and Development</span></li>
+                                </ul>
+                         </li>
+                                                     
+                            <li class="mItem">
+                                <div class="lCat mHidden" style="font-weight:bold">Publications:</div>
+                                <ul>
+                                    
+                                </ul>
+                         </li>
+                            
+                        <li class="mItem">
+                                <div class="lCat mHidden" style="font-weight:bold">Supervised student works:</div>
+                                <ul>
+                                    
+                                </ul>
+                         </li>
+                            
+                        <li class="mItem">
+                                <div class="lCat" style="font-weight:bold">Lectures or Assistant Lectures:</div>
+                                <ul>
+                                    <li>Technologie II</li>
+                                    <li>Technologie I</li>
+                                    <li>Sportwissenschaftliche Basiskompetenz Teil 1</li>
+                                    <li>Sporttechnologische Kompetenz • Sporttechnologisches Projekt</li>
+                                    <li>Produktionsergonomie</li>
+                                    <li>Methodisch-didaktische Ausbildung in den Sportarten: Skilauf ASK I Phil</li>
+                                    <li>Methoden des Sports Engineering</li>
+                                    <li>Höhere Biomechanik</li>
+                                    <li>Anwendung Sportwissenschaftl. Methoden / Statistiksoftware</li>
+                                    <li>Angewandte Biomechanik</li>
+                                    
+                                </ul>
+                         </li>
+                            
+                        </ul>
                    </div>
+                    
                 </div>
                 
             </div>  
@@ -174,7 +214,6 @@
           
       </div>
     </div></div>    
-  
     <!--Our javascript script-->
     <script type="text/javascript" src="dist/js/framework7.js"></script>
     <script src="js/myscript.js"></script>
