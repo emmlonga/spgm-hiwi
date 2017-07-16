@@ -1,1 +1,0 @@
-# spgm-hiwi

@@ -77,8 +77,8 @@
 
                           <nav class="language-nav">
                             <ul class="language-nav__list">
-                              <li class="language-nav__item"><a href="http://www.tum.de/startseite/" class="language-nav__link">de</a></li>
-                              <li class="language-nav__item language-nav__item--last"><a href="http://www.tum.de/en/homepage/" class="language-nav__link language-nav__link--active">en</a></li>
+                             <li class="language-nav__item"><a onclick="mainView.router.reloadPage('students_DE.html')" class="language-nav__link ">de</a></li>
+                              <li class="language-nav__item language-nav__item--last"><a onclick="mainView.router.reloadPage('students.html')" class="language-nav__link language-nav__link--active">en</a></li>
                             </ul>
                           </nav>
 
@@ -116,7 +116,7 @@
                 <div class="oNav"><div class="nav">
                     <a href="offers.html">Offers</a>
                     <a href="news.html">News</a>
-                    <a href="researchNew.html">Research</a>
+                    <a href="sports.html">Research</a>
                     <a href="courses.html">Courses</a>
                     <a href="team.html" class="selected">Team</a>
                 </div></div>
@@ -133,13 +133,7 @@
                 
                 <div class="leftNav">
                     <ul class="leftNav_list">
-                        <li class="leftNav_item"><a class="leftNav_link sub sub_active">Team</a></li>
-                            <ul class="leftNav_submenu">
-                                <li class="leftNav_item"><a class="leftNav_link">Leader</a></li>
-                                <li class="leftNav_item"><a class="leftNav_link">Secretary</a></li>
-                                <li class="leftNav_item"><a class="leftNav_link">Researchers</a></li>
-                                <li class="leftNav_item"><a class="leftNav_link leftNav_selected">Student Assistants</a></li>
-                            </ul>
+                        <li class="leftNav_item"><a class="leftNav_link leftNav_selected" href="team.html">Team</a></li>
                     </ul>
                 </div>
                 
@@ -152,7 +146,7 @@
                <div class="sFeed">
                    <div class="your-class">
                        <div class="rCard shadow--4dp">
-                        <img src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_Mitarbeiter_Backes_e51f923374.png">
+                        <div class="rImgDiv"><img src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_Mitarbeiter_Backes_e51f923374.png"></div>
                        <ul>
                            <li class="sName">B.Sc. Anne Backes</li>
                            <li><span class="lCat">Email</span><span>anne.backes@tum.de</span></li>

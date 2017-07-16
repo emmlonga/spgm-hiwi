@@ -71,8 +71,8 @@
 
                           <nav class="language-nav">
                             <ul class="language-nav__list">
-                              <li class="language-nav__item"><a href="http://www.tum.de/startseite/" class="language-nav__link">de</a></li>
-                              <li class="language-nav__item language-nav__item--last"><a href="http://www.tum.de/en/homepage/" class="language-nav__link language-nav__link--active">en</a></li>
+                              <li class="language-nav__item"><a href="researchNew_DE.html" class="language-nav__link">de</a></li>
+                              <li class="language-nav__item language-nav__item--last"><a href="researchNew.html" class="language-nav__link language-nav__link--active">en</a></li>
                             </ul>
                           </nav>
 
@@ -110,7 +110,7 @@
                 <div class="oNav"><div class="nav">
                     <a href="offers.html">Offers</a>
                     <a href="news.html">News</a>
-                    <a href="researchNew.html" class="selected">Research</a>
+                    <a href="sports.html" class="selected">Research</a>
                     <a href="courses.html">Courses</a>
                     <a href="team.html">Team</a>
                 </div></div>
@@ -118,7 +118,7 @@
                 <div class="breadCrumb">
                     <ul>
                         <li>Homepage</li>
-                        <li>> Research</li>
+                        <li>> Research Projects</li>
                     </ul>
                 </div>
                     
@@ -126,34 +126,22 @@
                 
                 <div class="leftNav" style="padding:0 42.5px;bottom:0px;margin-left:0px;background-color:white">
                     <ul class="leftNav_list">
-                        <li class="leftNav_item"><a class="leftNav_link leftNav_selected sub sub_active">Research</a>
-                            <ul class="leftNav_submenu">
-                                <li class="leftNav_item"><a class="leftNav_link sub">Projects by Research Fields</a></li>
-                                <li class="leftNav_item"><a class="leftNav_link sub">Projects by Superior Research Goals</a>
-                                    <ul class="leftNav_submenu_2" style="display:none">
-                                         <li class="leftNav_item"><a class="leftNav_link">Perfomance</a></li>
-                                         <li class="leftNav_item"><a class="leftNav_link">Pleasure</a></li>
-                                         <li class="leftNav_item"><a class="leftNav_link">Safety</a></li>
-                                    </ul>
-                                </li>
-                                <li class="leftNav_item"><a class="leftNav_link">Projects by Sports Disciplines</a></li>
-                            </ul>
-                        </li>
-                        <li class="leftNav_item"><a class="leftNav_link">View all Projects</a></li>
+                        <li class="leftNav_item"><a class="leftNav_link leftNav_selected sub">Research Projects</a>
+                        <li class="leftNav_item"><a class="leftNav_link" href="listProjects.html">Thesis and Publications</a></li>
                     </ul>
                 </div>
                 
                 <div class="innerContent">
                     
                 <div class="screenTitle">
-                    <div id="mainTitle">Research</div>
+                    <div id="mainTitle">Research Projects</div>
                     <div id="subTitle">Search through the professorship's research projects.</div></div>
                     
                 <div class="pFeed">
                     <div class="pLeft">
                         <div id="closeFilter" onclick="toggleFilter()"><i class="fa fa-times" aria-hidden="true"></i></div>
                         <div class="filterCat"><span>Sports Disciplines</span>
-                            <div class="button">List of Sports</div>
+                            <div onclick="javascript:mainView.router.loadPage('sports.html');" class="button">List of Sports</div>
                         </div>
                         <div class="filterCat"><span>Research Fields</span>
                             <div class="button">Biomechanics</div>
@@ -169,35 +157,24 @@
                     </div>
                     
                     <div class="pCenter">
-                        <div id="filterDiv" class="shadow--2dp" onclick="toggleFilter()">
+                        <div id="filterDiv" class="shadow--2dp" onclick="javascript:mainView.router.loadPage('sports.html');">
                         <i style="display:inline-flex" class="button fa fa-filter" aria-hidden="true"></i>
                         <span>Filter projects by categories</span>
                         </div>
                         
-                        <div class="lTitle">Project List</div>                        
-                        <ul>
-                           <li class="menuEle2 leftNav_selected shadow--4dp">Bioss</li>
+                        <div class="lTitle">Project List</div>
+                        <div class="listDiv">
+                        <ul class="projectList">
+                           <li class="menuEle2 menuEle_selected shadow--4dp">Bioss</li>
                             <li class="menuEle2">Functional Textils</li>
                             <li class="menuEle2">Sky Running</li>
                             <li class="menuEle2">Sustainable Fitness Service</li>
                             <li class="menuEle2">Kneemax</li>
                        </ul>
+                        </div>
                    </div>
                     
                     <div class="pRight">
-                        <div id="pName">BIOSS</div>
-                    <div id="pTitle">Biofeedback System for Thermal Strain</div>
-                    <div id="pDescription">Description
-                        <p>In sports, medicine and work thermal stress and hydration can be a performance inhibiting factor. Several studies prove a double edges problem due to transient conditions or under- or over-hydration that can cause health risks or even death. Due to the Zentrale Innovationsprogram Mittelstand (ZIM) of the Federal Ministry of Economic Affairs and Energy (BMWi), the Professorship of Sports Equipment and Materials of the Technische Universität München was granted a two year project. In cooperation with ciclosport® a new biofeedback system to monitor thermal stress in medicine, sports and work shall be developed. The goal is the development and combination of non invasive measuring methods to determine heat stress relevant parameters, such as body temperatures, heart frequency and sweat rate and/or their modelling. The integration of multiple factors shall lead to more reliable predictions of thermal strain and feedback on reasonable counteractions.</p>  
-                    </div>
-                        
-                        <div id="pLeader"><span>Leaders: Marius Janta; Stefanie Passler</span></div>
-                    
-                    <footer>
-                            <div class="news-list__morelink">
-                              <a class="" href="projectNew.html" style="border-bottom: 1px solid #777">read more</a>
-                            </div>
-                          </footer>
                                         
                 </div>
                 
@@ -206,7 +183,7 @@
         </div>
           
       </div>
-    </div></div>    
+          </div></div></div>
     <!--Our javascript script-->
     <script type="text/javascript" src="dist/js/framework7.js"></script>
     <script src="js/myscript.js"></script>
@@ -215,6 +192,7 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/projects.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://www.tum.de/typo3conf/ext/in2template/Resources/Public/JavaScripts/basic.js"></script>
 </body>

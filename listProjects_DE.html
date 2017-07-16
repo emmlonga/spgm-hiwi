@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#2196f3">
+
+    <title>Your App Name</title>
+
+    <!-- Path to Framework7 iOS CSS theme styles-->
+    <link rel="stylesheet" href="dist/css/framework7.material.css">
+    <!-- Path to Framework7 iOS related color styles -->
+    <link rel="stylesheet" href="dist/css/framework7.material.colors.css">
+
+    <!-- embed jquery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!-- embed font awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    
+        <!--Framework 7 icons-->
+    <link rel="stylesheet" href="lib/Framework7-Icons-master/css/framework7-icons.css">
+    
+    <!-- Material IO icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            
+    <!-- CSS FLAGS-->
+    <link rel="stylesheet" href="lib/flag-icon-css-master/css/flag-icon.css">
+    
+    <!--FOUNDATION-->
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!--TUM-->
+    <link rel="stylesheet" href="css/TUMstyle.css">
+    
+    <!--Path to own CSS SHEET-->
+    <link rel="stylesheet" href="css/mystyle.css">
+
+
+    
+
+</head>
+
+<!-- X when the body has loaded -->
+<!--<body onload="X()">-->
+
+<body>
+
+    <!-- Views -->
+    <div class="views">
+      <div class="view view-main">
+        <div class="pages">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="listProjects_DE" class="page">
+          
+            <div class="page-content">
+                
+               <header class="container">
+                    <div class="js-service-bar service-bar">
+                        <div class="row">
+                            <div class="twelve columns">
+
+                           <nav class="language-nav">
+                            <ul class="language-nav__list">
+                              <li class="language-nav__item"><a href="listProjects_DE.html" class="language-nav__link language-nav__link--active">de</a></li>
+                              <li class="language-nav__item language-nav__item--last"><a href="listProjects.html" class="language-nav__link">en</a></li>
+                            </ul>
+                          </nav>
+
+                            </div>
+                        </div>
+                    </div>
+                            <div class="row">
+                        <div class="twelve columns">
+                            <div class="logo-bar">
+                                <div class="logo-bar__inner">
+
+                                    <nav class="clearfix">
+                                        <ul>
+                                            <li class="l_this">
+                                                <a href="/en/homepage/" title="Home www.spgm.mw.tum.de">Professur für Sportgeräte und Sportmaterialien</a>
+                                            </li>
+                                            <li class="l_parent">
+                                                <a href="http://www.mw.tum.de/?L=1" title="Home www.mw.tum.de" target="_top">Fakultät für Maschinenwesen</a>
+                                            </li>
+                                            <li class="l_top"><a href="http://www.tum.de/en/" title="Home www.tum.de" target="_top">Technische Universität München</a></li>
+                                        </ul>
+
+                                        <div class="tum">
+                                            <a href="http://www.tum.de/en/" title="Home www.tum.de">
+                                                <img src="Images/tum-logo.png" width="73" height="38" alt="Technical University of Munich">
+                                            </a>
+                                        </div>
+                                    </nav>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <div class="oNav"><div class="nav">
+                    <a href="offers_DE.html">Angebote</a>
+                    <a href="news_DE.html">Aktuelles</a>
+                    <a href="sports_DE.html" class="selected">Forschung</a>
+                    <a href="courses_DE.html">Lehre</a>
+                    <a href="team_DE.html">Mitarbeiter</a>
+                </div></div>
+                
+                <div class="breadCrumb">
+                    <ul>
+                        <li>Startseite</li>
+                        <li>> Dissertationen und Publickationen</li>
+                    </ul>
+                </div>
+ 
+                        </header>
+                
+                <div class="leftNav" style="padding:0 42.5px;bottom:0px;margin-left:0px;background-color:white">
+                    <ul class="leftNav_list">
+                        <li class="leftNav_item"><a class="leftNav_link sub" href="researchNew_DE.html">Forschungsprojekte</a>
+                        <li class="leftNav_item"><a class="leftNav_link leftNav_selected" href="listProjects_DE.html">Dissertationen und Publikationen</a></li>
+                    </ul>
+                </div>
+                
+                <div class="innerContent">
+                    
+                <div class="screenTitle">
+                    <div id="mainTitle">Dissertationen und Publikationen</div>
+                    <div id="subTitle">Suche durch die Dissertationen und Publikationen der Professur.</div></div>
+                    
+                <div class="pFeed">
+                    <div class="pLeft">
+                        <div id="closeFilter" onclick="toggleFilter()"><i class="fa fa-times" aria-hidden="true"></i></div>
+                        <div class="filterCat"><span>Sports Disciplines</span>
+                            <div onclick="javascript:mainView.router.loadPage('sports_DE.html');" class="button">List of Sports</div>
+                        </div>
+                        <div class="filterCat"><span>Research Fields</span>
+                            <div class="button">Biomechanics</div>
+                            <div class="button">Material Science</div>
+                            <div class="button">Physiology</div>
+                            <div class="button">Psychology</div>
+                        </div>
+                        <div class="filterCat"><span>Research Goals</span>
+                            <div class="button">Performance</div>
+                            <div class="button">Pleasure</div>
+                            <div class="button">Safety</div>
+                        </div>                       
+                    </div>
+                    
+                    <div class="projCenter">
+                        <div id="filterDiv" class="shadow--2dp" onclick="javascript:mainView.router.loadPage('sports_DE.html');">
+                        <i style="display:inline-flex" class="button fa fa-filter" aria-hidden="true"></i>
+                        <span>Filtern Sie die Forschung</span>
+                        </div>
+                        
+                        <div class="lTitle">Projektliste</div>
+                        <div class="listDiv">
+                        <ul class="projectList">
+                           <li class="menuEle2 menuEle_selected shadow--4dp">Bioss</li>
+                            <li class="menuEle2">Functional Textils</li>
+                            <li class="menuEle2">Sky Running</li>
+                            <li class="menuEle2">Sustainable Fitness Service</li>
+                            <li class="menuEle2">Kneemax</li>
+                       </ul>
+                            </div>
+                   </div>
+                    
+                    <div class="pRight">
+                    <div id="pName">BIOSS</div>
+                    <div id="pTitle">Biofeedback System for Thermal Strain</div>
+                    
+                    <div id="pLeader"><span>Leaders: Marius Janta; Stefanie Passler</span></div>
+                    
+                    <div id="pClass">
+                        <ul id="pSport"><span class="">Sport Disciplines</span>
+                            <li>Endurance - triathlon</li>
+                            <li>Cycling - road/mountain/e-bike</li>
+                            <li>Running & trail running</li>
+                        </ul>
+                        <ul id="pField"><span class="">Research Fields</span>
+                            <li>Physiology</li>
+                            <li>Materials Science</li>
+                            <li>Psychology</li>
+                        </ul>
+                        <ul id="pGoal"><span class="">Research Goals</span>
+                            <li>Safety</li>
+                            <li>Performance</li>
+                        </ul>
+                    </div>
+                        
+                    <footer>
+                            <div class="news-list__morelink">
+                              <a class="" href="projectNew.html" style="border-bottom: 1px solid #777">read more</a>
+                            </div>
+                          </footer>
+                                        
+                </div>
+                
+            </div>  
+          </div>
+        </div>
+          
+      </div>
+          </div></div></div>    
+    <!--Our javascript script-->
+    <script type="text/javascript" src="dist/js/framework7.js"></script>
+    <script src="js/myscript.js"></script>
+     
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://www.tum.de/typo3conf/ext/in2template/Resources/Public/JavaScripts/basic.js"></script>
+</body>
+
+</html>

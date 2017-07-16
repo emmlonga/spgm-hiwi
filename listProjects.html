@@ -39,6 +39,9 @@
     <!--BOOTSTRAP-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     
+    <!--TUM-->
+    <link rel="stylesheet" href="css/TUMstyle.css">
+    
     <!--Path to own CSS SHEET-->
     <link rel="stylesheet" href="css/mystyle.css">
 
@@ -52,96 +55,162 @@
 
 <body>
 
-    <!-- Status bar overlay for full screen mode (PhoneGap) -->
-    <div class="statusbar-overlay"></div>
-    <!-- Panels overlay-->
-    <div class="panel-overlay"></div>
-    <!-- Left panel with reveal effect-->
-    <div class="panel panel-left panel-reveal">
-      <div class="content-block">
-        <p>Left panel content goes here</p>
-      </div>
-    </div>
     <!-- Views -->
     <div class="views">
-      <!-- Your main view, should have "view-main" class -->
       <div class="view view-main">
-        <!-- Top Navbar-->
-
-        <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
         <div class="pages">
           <!-- Page, "data-page" contains page name -->
-          <div data-page="research2" class="page">
-            
-              
-            <!-- Scrollable page content -->
+          <div data-page="listProjects" class="page">
+          
             <div class="page-content">
-                    
-                <div id="nav">
-                    <div>Offers</div>
-                    <div>News</div>
-                    <div class="selected">Research</div>
-                    <div>Courses</div>
-                    <div>Team</div>
-                </div>
+                
+                <header class="container">
+                    <div class="js-service-bar service-bar">
+                        <div class="row">
+                            <div class="twelve columns">
 
+                          <nav class="language-nav">
+                            <ul class="language-nav__list">
+                              <li class="language-nav__item"><a href="listProjects_DE.html" class="language-nav__link">de</a></li>
+                              <li class="language-nav__item language-nav__item--last"><a href="listProjects.html" class="language-nav__link language-nav__link--active">en</a></li>
+                            </ul>
+                          </nav>
+
+                            </div>
+                        </div>
+                    </div>
+                            <div class="row">
+                        <div class="twelve columns">
+                            <div class="logo-bar">
+                                <div class="logo-bar__inner">
+
+                                    <nav class="clearfix">
+                                        <ul>
+                                            <li class="l_this">
+                                                <a href="/en/homepage/" title="Home www.spgm.mw.tum.de">Associate Professorship of Sport Equipment and Sport Materials</a>
+                                            </li>
+                                            <li class="l_parent">
+                                                <a href="http://www.mw.tum.de/?L=1" title="Home www.mw.tum.de" target="_top">TUM Department of Mechanical Engineering</a>
+                                            </li>
+                                            <li class="l_top"><a href="http://www.tum.de/en/" title="Home www.tum.de" target="_top">Technical University of Munich</a></li>
+                                        </ul>
+
+                                        <div class="tum">
+                                            <a href="http://www.tum.de/en/" title="Home www.tum.de">
+                                                <img src="Images/tum-logo.png" width="73" height="38" alt="Technical University of Munich">
+                                            </a>
+                                        </div>
+                                    </nav>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <div class="oNav"><div class="nav">
+                    <a href="offers.html">Offers</a>
+                    <a href="news.html">News</a>
+                    <a href="sports.html" class="selected">Research</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="team.html">Team</a>
+                </div></div>
+                    
+                <div class="breadCrumb">
+                    <ul>
+                        <li>Homepage</li>
+                        <li>> Thesis and Publications</li>
+                    </ul>
+                </div>
+                    
+                        </header>
                 
-                <div id="menuList">
-                    <div class="menuTitle">Projects</div>
-                    <div class="menuEle2">BIOSS</div>
-                    <div class="menuEle">Project 2</div>
-                    <div class="menuEle">Project 3</div>
-                    <div class="menuEle">Project 4</div>
+                <div class="leftNav" style="padding:0 42.5px;bottom:0px;margin-left:0px;background-color:white">
+                    <ul class="leftNav_list">
+                        <li class="leftNav_item"><a class="leftNav_link sub" href="researchNew.html">Research Projects</a>
+                        <li class="leftNav_item"><a class="leftNav_link leftNav_selected" href="listProjects.html">Thesis and Publications</a></li>
+                    </ul>
                 </div>
                 
-                <div id="pDiv">
+                <div class="innerContent">
+                    
+                <div class="screenTitle">
+                    <div id="mainTitle">Thesis and Publications</div>
+                    <div id="subTitle">Search through the professorship's thesis and publications.</div></div>
+                    
+                <div class="pFeed">
+                    <div class="pLeft">
+                        <div id="closeFilter" onclick="toggleFilter()"><i class="fa fa-times" aria-hidden="true"></i></div>
+                        <div class="filterCat"><span>Sports Disciplines</span>
+                            <div onclick="javascript:mainView.router.loadPage('sports.html');" class="button">List of Sports</div>
+                        </div>
+                        <div class="filterCat"><span>Research Fields</span>
+                            <div class="button">Biomechanics</div>
+                            <div class="button">Material Science</div>
+                            <div class="button">Physiology</div>
+                            <div class="button">Psychology</div>
+                        </div>
+                        <div class="filterCat"><span>Research Goals</span>
+                            <div class="button">Performance</div>
+                            <div class="button">Pleasure</div>
+                            <div class="button">Safety</div>
+                        </div>                       
+                    </div>
+                    
+                    <div class="projCenter">
+                        <div id="filterDiv" class="shadow--2dp" onclick="javascript:mainView.router.loadPage('sports.html');">
+                        <i style="display:inline-flex" class="button fa fa-filter" aria-hidden="true"></i>
+                        <span>Filter projects by categories</span>
+                        </div>
+                        
+                        <div class="lTitle">Project List</div>
+                        <div class="listDiv">
+                        <ul class="projectList">
+                           <li class="menuEle2 menuEle_selected shadow--4dp">Bioss</li>
+                            <li class="menuEle2">Functional Textils</li>
+                            <li class="menuEle2">Sky Running</li>
+                            <li class="menuEle2">Sustainable Fitness Service</li>
+                            <li class="menuEle2">Kneemax</li>
+                       </ul>
+                            </div>
+                   </div>
+                    
+                    <div class="pRight">
                     <div id="pName">BIOSS</div>
                     <div id="pTitle">Biofeedback System for Thermal Strain</div>
-                    <div id="pDescription">Description
-                        <p>In sports, medicine and work thermal stress and hydration can be a performance inhibiting factor. Several studies prove a double edges problem due to transient conditions or under- or over-hydration that can cause health risks or even death. Due to the Zentrale Innovationsprogram Mittelstand (ZIM) of the Federal Ministry of Economic Affairs and Energy (BMWi), the Professorship of Sports Equipment and Materials of the Technische Universität München was granted a two year project. In cooperation with ciclosport® a new biofeedback system to monitor thermal stress in medicine, sports and work shall be developed. The goal is the development and combination of non invasive measuring methods to determine heat stress relevant parameters, such as body temperatures, heart frequency and sweat rate and/or their modelling. The integration of multiple factors shall lead to more reliable predictions of thermal strain and feedback on reasonable counteractions.</p>  
-                    </div>
                     
-                    <div id="p2">
-                        <div id="pTeam">Team
-                            <div id="pLeader"><span class="pSub">Leader </span><span>Marius Janta; Stefanie Passler</span></div>
-                            <div id="pPartner"><span class="pSub">Partner </span><span>Ciclosport</span></div>
-                            <div id="p"><span class="pSub">Funding </span><span>Public with industry</span></div>
-                        </div>
-
-                        <div id="pCal" style="padding-left:280px">Calendar
-                            <div id="pStatus"><span class="pSub">Status</span> <span>Running</span></div>
-                            <div id="pStart"><span class="pSub">Start</span> <span>01/07/2015</span></div>
-                            <div id="pEnd"><span class="pSub">End</span> <span>30/06/2017</span></div>
-                        </div>
-                    </div>
-
-
+                    <div id="pLeader"><span>Leaders: Marius Janta; Stefanie Passler</span></div>
+                    
                     <div id="pClass">
-                        <ul id="pSport">Sport
+                        <ul id="pSport"><span class="">Sport Disciplines</span>
                             <li>Endurance - triathlon</li>
                             <li>Cycling - road/mountain/e-bike</li>
                             <li>Running & trail running</li>
                         </ul>
-                        <ul id="pField">Field
+                        <ul id="pField"><span class="">Research Fields</span>
                             <li>Physiology</li>
                             <li>Materials Science</li>
                             <li>Psychology</li>
                         </ul>
-                        <ul id="pGoal">Goal
+                        <ul id="pGoal"><span class="">Research Goals</span>
                             <li>Safety</li>
                             <li>Performance</li>
                         </ul>
                     </div>
-                    
-                    
+                        
+                    <footer>
+                            <div class="news-list__morelink">
+                              <a class="" href="projectNew.html" style="border-bottom: 1px solid #777">read more</a>
+                            </div>
+                          </footer>
+                                        
                 </div>
-
                 
+            </div>  
           </div>
         </div>
           
       </div>
-    </div>    
+          </div></div></div>    
     <!--Our javascript script-->
     <script type="text/javascript" src="dist/js/framework7.js"></script>
     <script src="js/myscript.js"></script>
@@ -150,12 +219,9 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/projects.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://www.tum.de/typo3conf/ext/in2template/Resources/Public/JavaScripts/basic.js"></script>
 </body>
 
 </html>
-    
-    <div id="readMore">
-                        <span>Read more</span>
-                        <i style="display:inline-flex" class="button fa fa-arrow-right shadow--2dp" aria-hidden="true"></i>
-                    </div>

@@ -71,8 +71,8 @@
 
                           <nav class="language-nav">
                             <ul class="language-nav__list">
-                              <li class="language-nav__item"><a href="http://www.tum.de/startseite/" class="language-nav__link">de</a></li>
-                              <li class="language-nav__item language-nav__item--last"><a href="http://www.tum.de/en/homepage/" class="language-nav__link language-nav__link--active">en</a></li>
+                              <li class="language-nav__item"><a href="courses_DE.html" class="language-nav__link">de</a></li>
+                              <li class="language-nav__item language-nav__item--last"><a href="courses.html" class="language-nav__link language-nav__link--active">en</a></li>
                             </ul>
                           </nav>
 
@@ -110,7 +110,7 @@
                 <div class="oNav"><div class="nav">
                     <a href="offers.html">Offers</a>
                     <a href="news.html">News</a>
-                    <a href="researchNew.html">Research</a>
+                    <a href="sports.html">Research</a>
                     <a href="courses.html" class="selected">Courses</a>
                     <a href="team.html">Team</a>
                 </div></div>
@@ -126,11 +126,7 @@
                 
                 <div class="leftNav">
                     <ul class="leftNav_list">
-                        <li class="leftNav_item"><a class="leftNav_link leftNav_selected sub sub_active">Courses</a>
-                            <ul class="leftNav_submenu">
-                                <li class="leftNav_item"><a class="leftNav_link">Winter Semester</a></li>
-                                <li class="leftNav_item"><a class="leftNav_link">Summer Semester</a></li>
-                            </ul>
+                        <li class="leftNav_item"><a class="leftNav_link leftNav_selected">Courses</a>
                         </li>
                     </ul>
                 </div>
@@ -170,60 +166,60 @@
                             </div></a>
                           <div class="accordion-item-content">
                             <div class="content-block">
-                                <ul>
+                                <ul class="wsCourses">
                                     <li class="item-content">
-                                      <div class="item-inner">
-                                        <div class="item-title" id="first" onclick="openClose()">Biomechanics</div>
+                                      <div class="item-inner item-click2">
+                                        <div class="item-title item-click" id="first">Biomechanics</div>
                                       </div>
                                     </li>
                                     <li class="item-content">
-                                      <div class="item-inner">
-                                        <div class="item-title">Biomechanics - Digital Man Modeling (Practical)	</div>
+                                      <div class="item-inner item-click2">
+                                        <div class="item-title item-click">Biomechanics - Digital Man Modeling (Practical)	</div>
                                       </div>
                                     </li>
                                     <li class="item-content">
-                                      <div class="item-inner">
-                                        <div class="item-title">CAD Basics und Innovationsbewertung</div>
+                                      <div class="item-inner item-click2">
+                                        <div class="item-title item-click">CAD Basics und Innovationsbewertung</div>
+                                      </div>
+                                    </li>
+                                    <li class="item-content" onclick="coursePanel(0,3)">
+                                      <div class="item-inner item-click2">
+                                        <div class="item-title item-click">Interdisciplinary Project Methods Seminar</div>
                                       </div>
                                     </li>
                                     <li class="item-content">
-                                      <div class="item-inner">
-                                        <div class="item-title">Interdisciplinary Project Methods Seminar</div>
+                                      <div class="item-inner item-click2">
+                                        <div class="item-title item-click">Interdisciplinary Project - Project topics</div>
                                       </div>
                                     </li>
                                     <li class="item-content">
-                                      <div class="item-inner">
-                                        <div class="item-title">Interdisciplinary Project - Project topics</div>
+                                      <div class="item-inner item-click2">
+                                        <div class="item-title item-click">Master's and bachelor's colloquim</div>
                                       </div>
                                     </li>
                                     <li class="item-content">
-                                      <div class="item-inner">
-                                        <div class="item-title">Master's and bachelor's colloquim</div>
+                                      <div class="item-inner item-click2">
+                                        <div class="item-title item-click">Sport Technology Project</div>
                                       </div>
                                     </li>
                                     <li class="item-content">
-                                      <div class="item-inner">
-                                        <div class="item-title">Sport Technology Project</div>
+                                      <div class="item-inner item-click2">
+                                        <div class="item-title item-click">Sports Engineering</div>
                                       </div>
                                     </li>
                                     <li class="item-content">
-                                      <div class="item-inner">
-                                        <div class="item-title">Sports Engineering</div>
+                                      <div class="item-inner item-click2">
+                                        <div class="item-title item-click">Sporttechnologie</div>
                                       </div>
                                     </li>
                                     <li class="item-content">
-                                      <div class="item-inner">
-                                        <div class="item-title">Sporttechnologie</div>
+                                      <div class="item-inner item-click2">
+                                        <div class="item-title item-click">TUTORIAL - Digital human Modelling</div>
                                       </div>
                                     </li>
                                     <li class="item-content">
-                                      <div class="item-inner">
-                                        <div class="item-title">TUTORIAL - Digital human Modelling</div>
-                                      </div>
-                                    </li>
-                                    <li class="item-content">
-                                      <div class="item-inner">
-                                        <div class="item-title">TUTORIAL - Higher Biomechanics</div>
+                                      <div class="item-inner item-click2">
+                                        <div class="item-title item-click">TUTORIAL - Higher Biomechanics</div>
                                       </div>
                                     </li>
                                 </ul>
@@ -231,12 +227,53 @@
                           </div>
                         </li>
                         <li class="accordion-item" style="background-color:rgba(227, 114, 34,0.1)"><a href="#" class="item-content item-link">
-                            <div class="item-inner">
+                            <div class="item-inner" id="ss">
                               <div class="item-title">Summer Semester</div>
                             </div></a>
                           <div class="accordion-item-content">
                             <div class="content-block">
-                              <p>Item 2 content. Lorem ipsum dolor sit amet...</p>
+                              <ul class="ssCourses">
+                                    <li class="item-content">
+                                      <div class="item-inner item-click2">
+                                        <div class="item-title item-click">Biomechanics</div>
+                                      </div>
+                                    </li>
+                                    <li class="item-content">
+                                      <div class="item-inner item-click2">
+                                        <div class="item-title item-click">Biomechanics - Digital Man Modeling (Practical)	</div>
+                                      </div>
+                                    </li>
+                                    <li class="item-content">
+                                      <div class="item-inner item-click2">
+                                        <div class="item-title item-click">CAD Basics und Innovation Assessment (HFE)</div>
+                                      </div>
+                                    </li>
+                                    <li class="item-content">
+                                      <div class="item-inner item-click2">
+                                        <div class="item-title item-click">Interdisciplinary Project Methods Seminar</div>
+                                      </div>
+                                    </li>
+                                    <li class="item-content">
+                                      <div class="item-inner item-click2">
+                                        <div class="item-title item-click">Sport Technology Project</div>
+                                      </div>
+                                    </li>
+                                    <li class="item-content">
+                                      <div class="item-inner item-click2">
+                                        <div class="item-title item-click">Sports Engineering</div>
+                                      </div>
+                                    </li>
+                                    <li class="item-content">
+                                      <div class="item-inner item-click2">
+                                        <div class="item-title item-click">TUTORIAL - Digital human Modelling</div>
+                                      </div>
+                                    </li>
+                                    <li class="item-content">
+                                      <div class="item-inner item-click2">
+                                        <div class="item-title item-click">TUTORIAL - Higher Biomechanics</div>
+                                      </div>
+                                    </li>
+                                </ul>
                             </div>
                           </div>
                         </li>

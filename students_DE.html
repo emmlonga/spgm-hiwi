@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#2196f3">
+
+    <title>Your App Name</title>
+
+    <!-- Path to Framework7 iOS CSS theme styles-->
+    <link rel="stylesheet" href="dist/css/framework7.material.css">
+    <!-- Path to Framework7 iOS related color styles -->
+    <link rel="stylesheet" href="dist/css/framework7.material.colors.css">
+
+    <!-- embed jquery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!-- embed font awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    
+        <!--Framework 7 icons-->
+    <link rel="stylesheet" href="lib/Framework7-Icons-master/css/framework7-icons.css">
+    
+    <!-- Material IO icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            
+    <!-- CSS FLAGS-->
+    <link rel="stylesheet" href="lib/flag-icon-css-master/css/flag-icon.css">
+    
+    <!--FOUNDATION-->
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!--TUM-->
+    <link rel="stylesheet" href="css/TUMstyle.css">
+    
+    <!--SLICK-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+
+    
+    <!--Path to own CSS SHEET-->
+    <link rel="stylesheet" href="css/mystyle.css">
+
+
+    
+
+</head>
+
+<!-- X when the body has loaded -->
+<!--<body onload="X()">-->
+
+<body>
+
+    <!-- Views -->
+    <div class="views">
+      <div class="view view-main">
+        <div class="pages">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="students_DE" class="page">
+          
+            <div class="page-content"  style="overflow-x:hidden">
+                
+                <header class="container">
+                    <div class="js-service-bar service-bar">
+                        <div class="row">
+                            <div class="twelve columns">
+
+                           <nav class="language-nav">
+                            <ul class="language-nav__list">
+                              <li class="language-nav__item"><a onclick="mainView.router.reloadPage('students_DE.html')" class="language-nav__link language-nav__link--active">de</a></li>
+                              <li class="language-nav__item language-nav__item--last"><a onclick="mainView.router.reloadPage('students.html')" class="language-nav__link">en</a></li>
+                            </ul>
+                          </nav>
+
+                            </div>
+                        </div>
+                    </div>
+                            <div class="row">
+                        <div class="twelve columns">
+                            <div class="logo-bar">
+                                <div class="logo-bar__inner">
+
+                                    <nav class="clearfix">
+                                        <ul>
+                                            <li class="l_this">
+                                                <a href="/en/homepage/" title="Home www.spgm.mw.tum.de">Professur für Sportgeräte und Sportmaterialien</a>
+                                            </li>
+                                            <li class="l_parent">
+                                                <a href="http://www.mw.tum.de/?L=1" title="Home www.mw.tum.de" target="_top">Fakultät für Maschinenwesen</a>
+                                            </li>
+                                            <li class="l_top"><a href="http://www.tum.de/en/" title="Home www.tum.de" target="_top">Technische Universität München</a></li>
+                                        </ul>
+
+                                        <div class="tum">
+                                            <a href="http://www.tum.de/en/" title="Home www.tum.de">
+                                                <img src="Images/tum-logo.png" width="73" height="38" alt="Technical University of Munich">
+                                            </a>
+                                        </div>
+                                    </nav>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <div class="oNav"><div class="nav">
+                    <a href="offers_DE.html">Angebote</a>
+                    <a href="news_DE.html" >Aktuelles</a>
+                    <a href="sports_DE.html" >Forschung</a>
+                    <a href="courses_DE.html" >Lehre</a>
+                    <a href="team_DE.html" class="selected">Mitarbeiter</a>
+                </div></div>
+                
+                <div class="breadCrumb">
+                    <ul>
+                        <li>Startseite</li>
+                        <li>> Mitarbeiter</li>
+                        <li>> Studentische Hilfskraft</li>
+                    </ul>
+                </div>
+ 
+                        </header>
+                
+                <div class="leftNav">
+                    <ul class="leftNav_list">
+                        <li class="leftNav_item"><a class="leftNav_link leftNav_selected" href="team_DE.html">Mitarbeiter</a></li>
+                    </ul>
+                </div>
+                
+                <div class="innerContent">
+                
+                <div class="screenTitle">
+                    <div id="mainTitle">Studentische Hilfskraft</div>
+                    <div id="subTitle"></div></div>
+                
+               <div class="sFeed">
+                   <div class="your-class">
+                       <div class="rCard shadow--4dp">
+                        <div class="rImgDiv"><img src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_Mitarbeiter_Backes_e51f923374.png"></div>
+                       <ul>
+                           <li class="sName">B.Sc. Anne Backes</li>
+                           <li><span class="lCat">Email</span><span>anne.backes@tum.de</span></li>
+                       </ul>
+                       </div>
+                       
+                       <div class="rCard shadow--4dp">
+                        <img src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_Mitarbeiter_Knode_f8d4551de2.jpg">
+                       <ul>
+                           <li class="sName">B.Sc. Jana Knode</li>
+                           <li><span class="lCat">Email</span><span>knode@lfe.mw.tum.de</span></li>
+                       </ul>
+                       </div>
+                       
+                       <div class="rCard shadow--4dp">
+                        <img src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_profile_small_2e587d40a6.jpg">
+                       <ul>
+                           <li class="sName">B.Sc. Kaiyu Huang</li>
+                           <li><span class="lCat">Email</span><span>kaiyu.huang@tum.de</span></li>
+                       </ul>
+                       </div>
+                       
+                       <div class="rCard shadow--4dp">
+                        <img src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_Mitarbeiter_400x500_Muster_0d35d2fe5f.png">
+                       <ul>
+                           <li class="sName">B.Sc. Christoph Kugler</li>
+                           <li><span class="lCat">Email</span><span>kuglerchristoph@gmx.de</span></li>
+                       </ul>
+                       </div>
+                       
+                       <div class="rCard shadow--4dp">
+                        <img src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_Mitarbeiter_400x500_Muster_0d35d2fe5f.png">
+                       <ul>
+                           <li class="sName">B.Sc. Maximilian Steigenberger</li>
+                           <li><span class="lCat">Email</span><span>maximilian.steigenberger@tum.de</span></li>
+                       </ul>
+                       </div>
+                       
+                       <div class="rCard shadow--4dp">
+                        <img src="http://www.spgm.mw.tum.de/fileadmin/_processed_/csm_Mitarbeiter_400x500_Muster_0d35d2fe5f.png">
+                       <ul>
+                           <li class="sName">B.Sc. Michael Knye</li>
+                           <li><span class="lCat">Email</span><span>m.knye@tum.de</span></li>
+                       </ul>
+                       </div>
+                       
+                       
+                       
+                    </div>
+                   
+                   
+                </div>
+            </div>  
+          </div>
+        </div>
+          
+      </div>
+    </div></div>    
+  
+    <!--Our javascript script-->
+    <script type="text/javascript" src="dist/js/framework7.js"></script>
+    <script src="js/myscript.js"></script>
+     
+    <script src="js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://www.tum.de/typo3conf/ext/in2template/Resources/Public/JavaScripts/basic.js"></script>
+    
+      <script type="text/javascript">
+        $(document).ready(function(){
+        $('.your-class').slick({
+            infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 3      });
+    });
+  </script>
+    
+</body>
+
+</html>
