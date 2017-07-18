@@ -346,9 +346,9 @@ function rememberClicked () {
         $('[id="'+Field[i]+'"]').toggleClass("spSelR")
     } for (i in Goal) {
         $('[id="'+Goal[i]+'"]').toggleClass("spSelG")
-    } if (Mode[0]=="AND") {$('.sLabel').click();};
-    if (Mode[1]=="AND") {$('.gLabel').click();};
-    if (Mode[2]=="AND") {$('.fLabel').click();};
+    } if (Mode[0]=="AND") {$('.sSwitch').click();};
+    if (Mode[1]=="AND") {$('.gSwitch').click();};
+    if (Mode[2]=="AND") {$('.fSwitch').click();};
 }
 
 function changeMode (value) {
@@ -359,3 +359,25 @@ function changeMode (value) {
     }
 }
 
+function changeOnClick (val) {
+    if (val=='.sSwitch') {
+        spMode = changeMode(spMode);
+    } else if (val=='.fSwitch') {
+        fpMode = changeMode(fpMode);
+    } else if (val=='.gSwitch') {
+        gpMode = changeMode(gpMode);
+    }
+}
+
+function toggleMode (value) {
+    var a=$(''+value+' .or').hasClass('switchSel');
+    if (a==true) {
+        $(''+value+' .or').removeClass('switchSel');
+        $(''+value+' .and').addClass('switchSel');
+        changeOnClick (value);
+    } else if (a==false) {
+        $(''+value+' .and').removeClass('switchSel');
+        $(''+value+' .or').addClass('switchSel');
+        changeOnClick (value);
+    }
+}

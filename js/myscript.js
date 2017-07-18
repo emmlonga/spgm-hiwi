@@ -33,18 +33,16 @@ myApp.onPageInit('sports', function (page) {
         spMode = "OR";
         fpMode = "OR";
         gpMode = "OR";
-    rememberClicked();
-    updateFilter();
-    $('.sLabel').click(function(){
-        spMode = changeMode(spMode);
+    $('.sSwitch').click(function(){
+        toggleMode(".sSwitch");
          updateFilter();
     });
-    $('.gLabel').click(function(){
-        gpMode = changeMode(gpMode);
+    $('.gSwitch').click(function(){
+        toggleMode(".gSwitch");
          updateFilter();
     });
-    $('.fLabel').click(function(){
-        fpMode = changeMode(fpMode);
+    $('.fSwitch').click(function(){
+        toggleMode(".fSwitch");
          updateFilter();
     });
      $('.spCard').click(function(){
@@ -63,9 +61,20 @@ myApp.onPageInit('sports', function (page) {
         $('.spCard').removeClass('spSel');
         $('.spBG').removeClass('spSelG');
         $('.spBR').removeClass('spSelR');
-        updateFilter();
+        updateFilter()
     });
 });
+
+myApp.onPageBeforeAnimation('sports', function (page) {
+    rememberClicked();
+    updateFilter();
+});
+
+myApp.onPageAfterAnimation('sports', function (page) {
+     
+});
+
+
 
 myApp.onPageInit('sports_DE', function (page) {
         // Do something here for "index" page
@@ -76,15 +85,12 @@ myApp.onPageInit('sports_DE', function (page) {
     rememberClicked();
     updateFilter();
     $('.sLabel').click(function(){
-        spMode = changeMode(spMode);
          updateFilter();
     });
     $('.gLabel').click(function(){
-        gpMode = changeMode(gpMode);
          updateFilter();
     });
     $('.fLabel').click(function(){
-        fpMode = changeMode(fpMode);
          updateFilter();
     });
      $('.spCard').click(function(){
