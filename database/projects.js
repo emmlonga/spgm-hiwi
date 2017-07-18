@@ -134,7 +134,7 @@ var pProjects = [P1,P2,P3,P4,P5]
 var pData = [];
 
 $.ajax({
-    url: '../database/AlleStudienarbeiten-Spgm.xml',
+    url: '../spgm-hiwi/database/AlleStudienarbeiten-Spgm.xml',
     type: 'GET',
     dataType: 'xml',
     success: function (returnedXMLResponse) {
