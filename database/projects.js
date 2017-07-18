@@ -339,6 +339,11 @@ function updateFilter () {
     Mode = [spMode, gpMode, fpMode]
 }
 
+function updateCounter () {
+    $('#rCounter').html(rObj.length);
+    $('#pCounter').html(pObj.length);
+}
+
 function rememberClicked () {
     for (i in Sports) {
         $('[id="'+Sports[i]+'"]').toggleClass("spSel")

@@ -1149,9 +1149,9 @@ a {
     position: absolute;
     top: 7.5px;
     left: 1233px;
-    height: 32.5px;
+    height: 33.5px;
     width: 85px;
-    line-height: 32.5px;
+    line-height: 33.5px;
     text-align: center;
     background-color: rgba(72, 137, 206,0.8);
     font-size: 18px;
@@ -1163,7 +1163,7 @@ a {
     top: 7.5px;
     min-height: 32.5px;
     height: 30px;
-    left: 1124px;
+    left: 1092px;
     display: flex;
     background-color: rgba(72, 137, 206,0.3);
      border-radius: 5px;
@@ -1187,18 +1187,21 @@ a {
     text-align: center;
     line-height: 32.5px;
     margin: 0px 0px 0px 0px;
-    width: 50px;
+    width: 65px;
 }
 
 .and {
     text-align: center;
     line-height: 32.5px;
     margin: 0px 0px 0px 0px;
-    width: 50px;
+    width: 65px;
 }
 
 .switchSel {
     background-color: rgb(76, 217, 100);
+    border: 1px solid lightgreen;
+    margin: 0.2px -1px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
     
 }
 

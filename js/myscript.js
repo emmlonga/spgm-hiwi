@@ -18,6 +18,10 @@ var idleTime=0;
 $(document).ready(function () {
     console.log("App is initialized");
     Sports=[]; Field=[]; Goal=[]; Mode=[];
+    spMode = "OR";
+        fpMode = "OR";
+        gpMode = "OR";
+        updateFilter();
     var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
 
     //Zero the idle timer on mouse movement.
@@ -33,6 +37,7 @@ myApp.onPageInit('sports', function (page) {
         spMode = "OR";
         fpMode = "OR";
         gpMode = "OR";
+    updateCounter();
     $('.sSwitch').click(function(){
         toggleMode(".sSwitch");
          updateFilter();
@@ -70,11 +75,6 @@ myApp.onPageBeforeAnimation('sports', function (page) {
     updateFilter();
 });
 
-myApp.onPageAfterAnimation('sports', function (page) {
-     
-});
-
-
 
 myApp.onPageInit('sports_DE', function (page) {
         // Do something here for "index" page
@@ -82,15 +82,17 @@ myApp.onPageInit('sports_DE', function (page) {
         spMode = "OR";
         fpMode = "OR";
         gpMode = "OR";
-    rememberClicked();
-    updateFilter();
-    $('.sLabel').click(function(){
+    updateCounter();
+    $('.sSwitch').click(function(){
+        toggleMode(".sSwitch");
          updateFilter();
     });
-    $('.gLabel').click(function(){
+    $('.gSwitch').click(function(){
+        toggleMode(".gSwitch");
          updateFilter();
     });
-    $('.fLabel').click(function(){
+    $('.fSwitch').click(function(){
+        toggleMode(".fSwitch");
          updateFilter();
     });
      $('.spCard').click(function(){
@@ -109,8 +111,13 @@ myApp.onPageInit('sports_DE', function (page) {
         $('.spCard').removeClass('spSel');
         $('.spBG').removeClass('spSelG');
         $('.spBR').removeClass('spSelR');
-        updateFilter();
+        updateFilter()
     });
+});
+
+myApp.onPageBeforeAnimation('sports_DE', function (page) {
+    rememberClicked();
+    updateFilter();
 });
 
 myApp.onPageInit('courses', function (page) {
